@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          pink: "#e91e8c",
+          dark: "#b01068",
+          light: "#fce4ec",
+        }
+      }
+    },
   },
   plugins: [],
 }
-
